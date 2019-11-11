@@ -1,0 +1,116 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21 avr. 2019, 22:38:08
+    Author     : Florian
+*/
+
+
+.faderContainer, .buttonContainer
+{
+    position: relative;
+    border: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    
+}
+
+#upFaders, #downFaders
+{
+    width: 800px;
+    height: 400px;
+}
+
+#mainFaders
+{
+    width: 400px;
+    height: 400px; /* 330px */
+}
+
+
+#downButtons
+{
+    width: 800px;
+}
+
+#specialButtons
+{
+    width: 68px;
+    padding: 0px;
+    /*left: 802px;
+    top: -102px;*/
+}
+
+
+.fader
+{
+    width: 300px;
+    height: 90px;
+    margin-left: -120px;
+    margin-right: -120px;
+    margin-top: 170px; /* 120px */
+    transform: rotate(270deg);
+}
+
+input[type="button"]
+{
+    height: 50px;
+    width: 52px;
+    margin-left: 9px;
+    padding: 0px;
+    white-space: normal;
+}
+
+#disablepositionner1, #disablepositionner2, #disablepositionner3, #disablepositionner4
+{
+    margin-left: 36%;
+    margin-right: auto;
+    width: 75px;
+}
+
+textarea
+{
+    position: absolute;
+    min-width: 60px;
+    min-height: 50px;
+    max-width: 60px;
+    max-height: 50px;
+}
+
+#Invisible
+{
+    background: transparent;
+    border: none !important;
+    font-size:0;
+}
+
+
+.positionner
+{
+    width: 300px;
+    height: 300px;
+    background-color: lightgray;
+    border: 2px black solid;
+}
+
+.horizontalPositionnerLine
+{
+    width: 300px;
+    height: 0px;
+    border-bottom: 1px solid black;
+    position: absolute;
+    background-color: green;
+    margin-top: 150px;
+}
+
+.verticalPositionnerLine
+{
+    width: 0px;
+    height: 300px;
+    border-left: 1px solid black;
+    position: absolute;
+    margin-left: 150px;
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Behringer Eurolight LC2412</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="assets/Client.js"></script>
+        <link rel="stylesheet" href="assets/style.css">
+    </head>
+    <body>
+        <div id="all" onmousemove="onPositionChange(event)" ontouchmove="onPositionChange(event)" onmouseup="onMouseUp()" ontouchend="onMouseUp()">
+            <table>
+                <tr>
+                    <div id="upFaders" class="faderContainer">
+                        <textarea cols="5" rows="2" id="namefader1" oninput="onFaderNameChange('fader1')"></textarea>
+                        <input type="range" min="0" max="127" value="0" class="fader" id="fader1" oninput="onSliderInput('fader1')">
+                        <textarea cols="5" rows="2" id="namefader2" oninput="onFaderNameChange('fader2')"></textarea>
+                        <input type="range" min="0" max="127" value="0" class="fader" id="fader2" oninput="onSliderInput('fader2')">
+                        <textarea cols="5" rows="2" id="namefader3" oninput="onFaderNameChange('fader3')"></textarea>
+                        <input type="range" min="0" max="127" value="0" class="fader" id="fader3" oninput="onSliderInput('fader3')">
+                        <textarea cols="5" rows="2" id="namefader4" oninput="onFaderNameChange('fader4')"></textarea>
+                        <input type="range" min="0" max="127" value="0" class="fader" id="fader4" oninput="onSliderInput('fader4')">
+                        <textarea cols="5" rows="2" id="namefader5" oninput="onFaderNameChange('fader5')"></textarea>
+                        <input type="range" min="0" max="127" value="0" class="fader" id="fader5" oninput="onSliderInput('fader5')">
+                        <textarea cols="5" rows="2" id="namefader6" oninput="onFaderNameChange('fader6')"></textarea>
+                        <input type="range" min="0" max="127" value="0" class="fader" id="fader6" oninput="onSliderInput('fader6')">
+                        <textarea cols="5" rows="2" id="namefader7" oninput="onFaderNameChange('fader7')"></textarea>
+                        <input type="range" min="0" max="127" value="0" class="fader" id="fader7" oninput="onSliderInput('fader7')">
+                        <textarea cols="5" rows="2" id="namefader8" oninput="onFaderNameChange('fader8')"></textarea>
+                        <input type="range" min="0" max="127" value="0" class="fader" id="fader8" oninput="onSliderInput('fader8')">
+                        <textarea cols="5" rows="2" id="namefader9" oninput="onFaderNameChange('fader9')"></textarea>
+                        <input type="range" min="0" max="127" value="0" class="fader" id="fader9" oninput="onSliderInput('fader9')">
+                        <textarea cols="5" rows="2" id="namefader10" oninput="onFaderNameChange('fader10')"></textarea>
+                        <input type="range" min="0" max="127" value="0" class="fader" id="fader10" oninput="onSliderInput('fader10')">
+                        <textarea cols="5" rows="2" id="namefader11" oninput="onFaderNameChange('fader11')"></textarea>
+                        <input type="range" min="0" max="127" value="0" class="fader" id="fader11" oninput="onSliderInput('fader11')">
+                        <textarea cols="5" rows="2" id="namefader12" oninput="onFaderNameChange('fader12')"></textarea>
+                        <input type="range" min="0" max="127" value="0" class="fader" id="fader12" oninput="onSliderInput('fader12')">
+                        <script>
+                            StartFunction();
+                        </script>
+                    </div>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="downFaders" class="faderContainer">
+                            <textarea cols="5" rows="2" id="namefader13" oninput="onFaderNameChange('fader13')"></textarea>
+                            <input type="range" min="0" max="127" value="0" class="fader" id="fader13" oninput="onSliderInput('fader13')">
+                            <textarea cols="5" rows="2" id="namefader14" oninput="onFaderNameChange('fader14')"></textarea>
+                            <input type="range" min="0" max="127" value="0" class="fader" id="fader14" oninput="onSliderInput('fader14')">
+                            <textarea cols="5" rows="2" id="namefader15" oninput="onFaderNameChange('fader15')"></textarea>
+                            <input type="range" min="0" max="127" value="0" class="fader" id="fader15" oninput="onSliderInput('fader15')">
+                            <textarea cols="5" rows="2" id="namefader16" oninput="onFaderNameChange('fader16')"></textarea>
+                            <input type="range" min="0" max="127" value="0" class="fader" id="fader16" oninput="onSliderInput('fader16')">
+                            <textarea cols="5" rows="2" id="namefader17" oninput="onFaderNameChange('fader17')"></textarea>
+                            <input type="range" min="0" max="127" value="0" class="fader" id="fader17" oninput="onSliderInput('fader17')">
+                            <textarea cols="5" rows="2" id="namefader18" oninput="onFaderNameChange('fader18')"></textarea>
+                            <input type="range" min="0" max="127" value="0" class="fader" id="fader18" oninput="onSliderInput('fader18')">
+                            <textarea cols="5" rows="2" id="namefader19" oninput="onFaderNameChange('fader19')"></textarea>
+                            <input type="range" min="0" max="127" value="0" class="fader" id="fader19" oninput="onSliderInput('fader19')">
+                            <textarea cols="5" rows="2" id="namefader20" oninput="onFaderNameChange('fader20')"></textarea>
+                            <input type="range" min="0" max="127" value="0" class="fader" id="fader20" oninput="onSliderInput('fader20')">
+                            <textarea cols="5" rows="2" id="namefader21" oninput="onFaderNameChange('fader21')"></textarea>
+                            <input type="range" min="0" max="127" value="0" class="fader" id="fader21" oninput="onSliderInput('fader21')">
+                            <textarea cols="5" rows="2" id="namefader22" oninput="onFaderNameChange('fader22')"></textarea>
+                            <input type="range" min="0" max="127" value="0" class="fader" id="fader22" oninput="onSliderInput('fader22')">
+                            <textarea cols="5" rows="2" id="namefader23" oninput="onFaderNameChange('fader23')"></textarea>
+                            <input type="range" min="0" max="127" value="0" class="fader" id="fader23" oninput="onSliderInput('fader23')">
+                            <textarea cols="5" rows="2" id="namefader24" oninput="onFaderNameChange('fader24')"></textarea>
+                            <input type="range" min="0" max="127" value="0" class="fader" id="fader24" oninput="onSliderInput('fader24')">
+                        </div>
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+                        <div id="mainFaders" class="faderContainer">
+                            <textarea cols="5" rows="2" id="namefaderA" oninput="onFaderNameChange('faderA')"></textarea>
+                            <input type="range" min="0" max="127" value="0" class="fader" id="faderA" oninput="onSliderInput('faderA')">
+                            <textarea cols="5" rows="2" id="namefaderB" oninput="onFaderNameChange('faderB')"></textarea>
+                            <input type="range" min="0" max="127" value="0" class="fader" id="faderB" oninput="onSliderInput('faderB')">
+                            <textarea cols="5" rows="2" id="namefaderMain" oninput="onFaderNameChange('faderMain')"></textarea>
+                            <input type="range" min="0" max="127" value="0" class="fader" id="faderMain" oninput="onSliderInput('faderMain')">
+                            <textarea cols="5" rows="2" id="namefaderChase" oninput="onFaderNameChange('faderChase')"></textarea>
+                            <input type="range" min="0" max="127" value="0" class="fader" id="faderChase" oninput="onSliderInput('faderChase')">
+                            <textarea cols="5" rows="2" id="namefaderXFade" oninput="onFaderNameChange('faderXFade')"></textarea>
+                            <input type="range" min="0" max="127" value="0" class="fader" id="faderXFade" oninput="onSliderInput('faderXFade')">
+                            <textarea cols="5" rows="2" id="namefaderSpeed" oninput="onFaderNameChange('faderSpeed')"></textarea>
+                            <input type="range" min="0" max="127" value="0" class="fader" id="faderSpeed" oninput="onSliderInput('faderSpeed')">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="downButtons" class="buttonContainer">
+                            <input type="button" value="M1" id="button1" onclick="onButtonPress('button1')">
+                            <input type="button" value="M2" id="button2" onclick="onButtonPress('button2')">
+                            <input type="button" value="M3" id="button3" onclick="onButtonPress('button3')">
+                            <input type="button" value="M4" id="button4" onclick="onButtonPress('button4')">
+                            <input type="button" value="M5" id="button5" onclick="onButtonPress('button5')">
+                            <input type="button" value="M6" id="button6" onclick="onButtonPress('button6')">
+                            <input type="button" value="M7" id="button7" onclick="onButtonPress('button7')">
+                            <input type="button" value="M8" id="button8" onclick="onButtonPress('button8')">
+                            <input type="button" value="M9" id="button9" onclick="onButtonPress('button9')">
+                            <input type="button" value="M10" id="button10" onclick="onButtonPress('button10')">
+                            <input type="button" value="M11" id="button11" onclick="onButtonPress('button11')">
+                            <input type="button" value="M12" id="button12" onclick="onButtonPress('button12')">
+                        </div>
+                    </td>
+                    <td>
+                        <div id="specialButtons" class="buttonContainer">
+                            <input type="button" value="Special1" id="buttonSpecial1" onclick="onButtonPress('buttonSpecial1')">
+                            <input type="button" value="Special2" id="buttonSpecial2" onclick="onButtonPress('buttonSpecial2')">
+                        </div>
+                    </td>
+                    <td>
+                        <div id="mainButtons" class="buttonContainer">
+                            <input type="button" value="Preset" id="buttonPreset" onclick="onButtonPress('buttonPreset')">
+                            <input type="button" value="Memory" id="buttonMemory" onclick="onButtonPress('buttonMemory')">
+                            <input type="button" value="text" id="Invisible" disabled="true">
+                            <input type="button" value="Step" id="buttonStep" onclick="onButtonPress('buttonStep')">
+                            <input type="button" value="Manual" id="buttonManual" onclick="onButtonPress('buttonManual')">
+                            <input type="button" value="S/R" id="buttonSR" onclick="onButtonPress('buttonSR')">
+                        </div>
+                    </td>
+            </table>
+            <input type="checkbox" id="midiloop" value=""  oninput="onMidiLoopChange()">rtpMIDI notes loop
+            <table>
+                <tr>
+                    <td>
+                        <div id="positionner1" class="positionner" onmousedown="onMouseDown(this)" ontouchstart="onMouseDown(this)">
+                            <!-- Filled by JS -->
+                        </div>
+                        <input type="button" id="disablepositionner1" value="Reset Positionner1" onclick="onPositionnerReset('positionner1')">
+                    </td>
+                    <td>
+                        <div id="positionner2" class="positionner" onmousedown="onMouseDown(this)" ontouchstart="onMouseDown(this)">
+                            <!-- Filled by JS -->
+                        </div>
+                        <input type="button" id="disablepositionner2" value="Reset Positionner2" onclick="onPositionnerReset('positionner2')">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="positionner3" class="positionner" onmousedown="onMouseDown(this)" ontouchstart="onMouseDown(this)">
+                            <!-- Filled by JS -->
+                        </div>
+                        <input type="button" id="disablepositionner3" value="Reset Positionner3" onclick="onPositionnerReset('positionner3')">
+                    </td>
+                    <td>
+                        <div id="positionner4" class="positionner" onmousedown="onMouseDown(this)" ontouchstart="onMouseDown(this)">
+                            <!-- Filled by JS -->
+                        </div>
+                        <input type="button" id="disablepositionner4" value="Reset Positionner4" onclick="onPositionnerReset('positionner4')">
+                    </td>
+                </tr>
+                <div id="mididevices">
+                    <!-- Filled by JS -->
+                </div>
+                <input type="button" value="Eteindre le système" id="shutdown" onclick="onButtonShutdown()">
+                MIDI channel on LC2412 : <select id="MIDIchannel" onchange="onMIDIChannelChange(this)">
+                    <option value="176">1</option>
+                    <option value="177">2</option>
+                    <option value="178">3</option>
+                    <option value="179">4</option>
+                    <option value="180">5</option>
+                    <option value="181">6</option>
+                    <option value="182">7</option>
+                    <option value="183">8</option>
+                    <option value="184">9</option>
+                    <option value="185">10</option>
+                    <option value="186">11</option>
+                    <option value="187">12</option>
+                    <option value="188">13</option>
+                    <option value="189">14</option>
+                    <option value="190">15</option>
+                    <option value="191">16</option>
+                </select>
+        </div>
+    </body>
+</html>
