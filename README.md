@@ -40,7 +40,7 @@ The project runs on nodejs and currently needs four npm packages :
     socket.io
     rtpmidi
     midi
-Important note : A bug in the `rtpmidi` package version 1.0.0 is present that makes the software crash. I recommend to use the previous version 0.1.9 that works well (see [issue](https://github.com/jdachtera/node-rtpmidi/issues/20)).
+
 The `midi` package needs `alsa` and a few system packages to work correctly.
 We will assume in this tutorial  that you want to run this software on a user called `webmidi`.
 
@@ -67,7 +67,7 @@ We are now going to install the npm packages dependencies.
 
     npm install express
     npm install socket.io
-    npm install rtpmidi@0.1.9
+    npm install rtpmidi
     npm install midi
 Let's now download WEBrtpMIDI.
 
